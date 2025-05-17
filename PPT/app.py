@@ -20,7 +20,7 @@ def jogo():
         # botão Ver Resultado for pressionado processa o jogo
         if 'ver_resultado' in request.form and jogador1_escolha and jogador2_escolha:
             if jogador1_escolha == jogador2_escolha:
-                session['resultado'] = "Empate!"
+                resultado = "Empate!"
             elif (jogador1_escolha == "pedra" and jogador2_escolha == "tesoura") or \
                  (jogador1_escolha == "papel" and jogador2_escolha == "pedra") or \
                  (jogador1_escolha == "tesoura" and jogador2_escolha == "papel"):
