@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilizando o placar */
+.placar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os botões */
+button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Botão de reset com cor diferenciada */
+button[name="reset"] {
+    background: #ff4757;
+}
+
+button[name="reset"]:hover {
+    background: #ff6b81;
+}
+
+/* Estilizando os resultados */
+h2 {
+    margin-top: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+strong {
+    color: #ffd700;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
